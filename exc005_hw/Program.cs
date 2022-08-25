@@ -5,3 +5,14 @@
 // 2, 4 -> 16
 // Не использовать Math.Pow() и аналоги. Решаем строго через цикл
 
+Console.WriteLine("Input first number: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input second number: ");
+int numB = Convert.ToInt32(Console.ReadLine());
+
+int numAPow = numA;
+for (int i = 1; i < numB; i++){
+    numAPow *= numA;
+}
+
+Console.WriteLine($"{numA}^{numB}={numAPow}");
