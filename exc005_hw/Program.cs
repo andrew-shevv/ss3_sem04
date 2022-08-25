@@ -10,8 +10,8 @@ int numA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input second number: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 
-int numAPow = numA;
-for (int i = 1; i < numB; i++){
+int numAPow = 1;
+for (int i = 0; i < numB; i++){
     numAPow *= numA;
 }
 
