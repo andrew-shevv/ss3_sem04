@@ -10,8 +10,8 @@ Console.WriteLine("Input number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 num = Math.Abs(num);
 
-int count = 1;
-while (num >= 10){
+int count = 0;
+while (num > 0){
     num /= 10;
     count++;
 }
